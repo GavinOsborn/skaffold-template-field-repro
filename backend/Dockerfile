@@ -1,4 +1,5 @@
 FROM node:14.9-alpine
+ARG A_BUILD_TOKEN
 
 USER node
 RUN mkdir /home/node/app

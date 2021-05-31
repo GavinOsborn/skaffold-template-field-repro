@@ -5,7 +5,9 @@ build:
   artifacts:
   - image: node-example
     context: backend
-
+    docker:
+      buildArgs:
+        A_BUILD_TOKEN: '{{.AN_ENV_VARIABLE}}'
 profiles:
   - name: dev
     activation:
